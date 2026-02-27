@@ -11,6 +11,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxHeight
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -35,6 +36,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.zIndex
 import servando.contreras.composepokedex_servandocontrerasjimenez.compose.Ability
 import servando.contreras.composepokedex_servandocontrerasjimenez.compose.Chip
+import servando.contreras.composepokedex_servandocontrerasjimenez.compose.PokemonNavButton
 import servando.contreras.composepokedex_servandocontrerasjimenez.domain.Pokemon
 import servando.contreras.composepokedex_servandocontrerasjimenez.ui.theme.ComposePokedex_ServandoContrerasJimenezTheme
 import servando.contreras.composepokedex_servandocontrerasjimenez.ui.theme.ElectricYellow
@@ -108,6 +110,11 @@ fun PokemonCard(name: String, weight: Float, height: Float, description: String,
 
                 Row (Modifier.fillMaxWidth(.8f).align(Alignment.CenterHorizontally).padding(25.dp),){
                     Text(description, textAlign = TextAlign.Center)
+                }
+                Spacer(Modifier.weight(1f))
+                Row (modifier = Modifier.fillMaxWidth().padding(horizontal = 8.dp, vertical = .8.dp), horizontalArrangement = Arrangement.SpaceBetween){
+                    PokemonNavButton(position = "left",image = R.drawable.arbok, name = "Arbok", number = 24)
+                    PokemonNavButton(position = "right", image = R.drawable.raichu, name = "Raichu", number = 26)
                 }
 
             }
