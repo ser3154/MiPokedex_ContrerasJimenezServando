@@ -1,4 +1,4 @@
-package servando.contreras.mipokedex_contrerasjimenezservando
+package servando.contreras.composepokedex_servandocontrerasjimenez
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -20,7 +20,7 @@ class ExampleInstrumentedTest {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
         assertEquals(
-            "servando.contreras.mipokedex_contrerasjimenezservando",
+            "servando.contreras.composepokedex_servandocontrerasjimenez",
             appContext.packageName
         )
     }

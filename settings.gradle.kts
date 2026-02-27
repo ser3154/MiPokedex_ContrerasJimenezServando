@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "MiPokedex_ContrerasJimenezServando"
+rootProject.name = "ComposePokedex_ServandoContrerasJimenez"
 include(":app")
  

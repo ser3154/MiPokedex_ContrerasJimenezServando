@@ -1,4 +1,4 @@
-package servando.contreras.mipokedex_contrerasjimenezservando
+package servando.contreras.composepokedex_servandocontrerasjimenez
 
 import org.junit.Test
 
