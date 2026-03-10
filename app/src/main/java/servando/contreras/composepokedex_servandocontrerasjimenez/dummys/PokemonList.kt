@@ -2,6 +2,7 @@ package servando.contreras.composepokedex_servandocontrerasjimenez.dummys
 
 import servando.contreras.composepokedex_servandocontrerasjimenez.R
 import servando.contreras.composepokedex_servandocontrerasjimenez.domain.Pokemon
+import servando.contreras.composepokedex_servandocontrerasjimenez.pokemon
 
 
 val pokemonList = listOf(
@@ -15,7 +16,10 @@ val pokemonList = listOf(
         weight = 6.9f,
         fav = true,
         ability = "Espesura",
-        image = R.drawable.bulbasaur
+        image = R.drawable.bulbasaur,
+        evolutions = listOf(
+            Pokemon("Ivysaur",  2,  "grass/poison", "Cuando el bulbo de su espalda crece, parece no poder ponerse de pie sobre sus patas traseras.", 1.0f, 13.0f, false, "Espesura",  R.drawable.ivysaur),
+            Pokemon("Venusaur", 3,  "grass/poison", "La planta florece cuando absorbe energía solar. Ésta le obliga a ponerse en busca de la luz solar.", 2.0f, 100f,  false, "Espesura",  R.drawable.venusaur))
     ),
 
     Pokemon(
@@ -27,7 +31,11 @@ val pokemonList = listOf(
         weight = 8.5f,
         fav = false,
         ability = "Mar Llamas",
-        image = R.drawable.charmander
+        image = R.drawable.charmander,
+        evolutions = listOf(
+            Pokemon("Charmeleon", 5, "fire", "Cuando está luchando su llama arde vivamente, esto eleva las temperaturas.", 1.1f, 19.0f, false, "Mar Llamas", R.drawable.charmeleon),
+            Pokemon("Charizard",  6, "fire/flying", "Escupe fuego tan caliente que funde las rocas. Causa incendios forestales sin querer.", 1.7f, 90.5f, false, "Mar Llamas", R.drawable.charizard)
+        )
     ),
 
     Pokemon(
@@ -39,7 +47,11 @@ val pokemonList = listOf(
         weight = 9.0f,
         fav = false,
         ability = "Torrente",
-        image = R.drawable.squirtle
+        image = R.drawable.squirtle,
+        evolutions = listOf(
+            Pokemon("Wartortle", 8,  "water", "Se oculta en el agua para cazar a sus presas. Al nadar rápidamente, mueve sus orejas para nivelarse.", 1.0f, 22.5f, false, "Torrente", R.drawable.wartortle),
+            Pokemon("Blastoise", 9,  "water", "Un brutal Pokémon con reactores de agua en su caparazón. Éstos son usados para rápidos placajes.", 1.6f, 85.5f, false, "Torrente", R.drawable.blastoise)
+        )
     ),
 
     Pokemon(
@@ -51,7 +63,11 @@ val pokemonList = listOf(
         weight = 40.5f,
         fav = true,
         ability = "Levitación",
-        image = R.drawable.gengar
+        image = R.drawable.gengar,
+        evolutions = listOf(
+            Pokemon("Gastly",  92, "ghost/poison", "Casi invisible, este gaseoso Pokémon cubre al enemigo y lo adormece sin previo aviso.", 1.3f, 0.1f,  false, "Levitación", R.drawable.gastly),
+            Pokemon("Haunter", 93, "ghost/poison", "Por su habilidad para atravesar muros de piedra, se dice que viene de otra dimensión", 1.6f, 0.1f,  false, "Levitación", R.drawable.haunter)
+        )
     ),
 
     Pokemon(
@@ -63,7 +79,10 @@ val pokemonList = listOf(
         weight = 5.5f,
         fav = false,
         ability = "Gran Encanto",
-        image = R.drawable.jigglypuff
+        image = R.drawable.jigglypuff,
+        evolutions = listOf(
+            Pokemon("Wigglytuff", 40, "normal/fairy", "Su cuerpo es blando y gomoso. Cuando se enfada traga aire y se hincha enormemente.", 1.0f, 12.0f, false, "Gran Encanto", R.drawable.wigglytuff)
+        )
     ),
 
     Pokemon(
@@ -75,7 +94,10 @@ val pokemonList = listOf(
         weight = 4.2f,
         fav = false,
         ability = "Recogida",
-        image = R.drawable.meowth
+        image = R.drawable.meowth,
+        evolutions = listOf(
+            Pokemon("Persian", 53, "normal", "Aunque es muy admirado por su pelo, es difícil de entrenar como mascota por su voluble maldad.", 1.0f, 32.0f, false, "Recogida", R.drawable.persian)
+        )
     ),
 
     Pokemon(
@@ -87,7 +109,10 @@ val pokemonList = listOf(
         weight = 19.6f,
         fav = false,
         ability = "Humedad",
-        image = R.drawable.psyduck
+        image = R.drawable.psyduck,
+        evolutions = listOf(
+            Pokemon("Golduck", 55, "water", "Suele ser visto nadando elegante por los lagos. Es confundido con el monstruo japonés, Kappa.", 1.7f, 76.6f, false, "Humedad", R.drawable.golduck)
+        )
     ),
 
     Pokemon(
@@ -99,7 +124,11 @@ val pokemonList = listOf(
         weight = 19.5f,
         fav = false,
         ability = "Agallas",
-        image = R.drawable.machop
+        image = R.drawable.machop,
+        evolutions = listOf(
+            Pokemon("Machoke",  67, "fight", "Su musculoso cuerpo es tan fuerte que usa un cinto anti-fuerza para controlar sus movimientos.", 1.5f, 70.5f, false, "Agallas", R.drawable.machoke),
+            Pokemon("Machamp", 68, "fight", "Con sus fuertes músculos, lanza bestiales puñetazos y envía a su víctima al lejano horizonte.", 1.6f, 130f,  false, "Agallas", R.drawable.machamp)
+        )
     ),
 
     Pokemon(
@@ -111,7 +140,11 @@ val pokemonList = listOf(
         weight = 20.0f,
         fav = false,
         ability = "Cabeza Roca",
-        image = R.drawable.geodude
+        image = R.drawable.geodude,
+        evolutions = listOf(
+            Pokemon("Graveler",  75, "rock/ground", "Se mueve rodando cuesta abajo. Rueda sobre todo obstáculo sin frenar o cambiar de dirección.", 1.0f, 105f,  false, "Cabeza Roca", R.drawable.graveler),
+            Pokemon("Golem",    76, "rock/ground", "Su cuerpo rocoso es super duro. Soporta las explosiones de dinamita sin sufrir daño.", 1.4f, 300f,  false, "Cabeza Roca", R.drawable.golem)
+        )
     ),
 
     Pokemon(
@@ -123,7 +156,12 @@ val pokemonList = listOf(
         weight = 6.5f,
         fav = true,
         ability = "Fuga",
-        image = R.drawable.eevee
+        image = R.drawable.eevee,
+        evolutions = listOf(
+            Pokemon("Vaporeon",  134, "water",    "Vive cerca del agua. Su larga cola termina en una aleta muy parecida a la de una sirena", 1.0f, 29.0f, false, "Absorbe Agua", R.drawable.vaporeon),
+            Pokemon("Jolteon",   135, "electric", "Acumula iones negativos en la atmósfera para lanzar rayos de 10000 voltios de potencia.", 0.8f, 24.5f, false, "Pararrayos",  R.drawable.jolteon),
+            Pokemon("Flareon",   136, "fire",     "Cuando almacena energía térmica en su cuerpo, su temperatura puede subir a más de 1600 grados.", 0.9f, 25.0f, false, "Mar Llamas",  R.drawable.flareon)
+        )
     )
 )
 
@@ -131,10 +169,21 @@ fun showAllPokemons(): List<Pokemon>{
     return pokemonList
 }
 
+
+val allPokemon: List<Pokemon> by lazy{
+    pokemonList + pokemonList.flatMap { it.evolutions }
+}
+
 fun returnOnePokemon(): Pokemon{
     return pokemonList.get((0..9).random())
 }
 
-fun getPokemon(id:Int): Pokemon{
-    return pokemonList.filter { pokemon -> pokemon.number == id }.get(0)
+fun getPokemon(id:Int): Pokemon? = allPokemon.firstOrNull{it.number == id}
+
+fun getNeighbors(id: Int): Pair<Pokemon?, Pokemon?>{
+    val index = pokemonList.indexOfFirst { it.number == id}
+    if (index == -1) return Pair(null, null)
+    val prev = if (index > 0) pokemonList[index - 1] else null
+    val next = if (index < pokemonList.lastIndex) pokemonList[index + 1] else null
+    return Pair(prev, next)
 }
